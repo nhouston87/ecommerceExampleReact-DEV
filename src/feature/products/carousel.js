@@ -1,4 +1,9 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Rounded = styled.div`
+  border-radius: 5px;
+`
 
 export default () => {
   return(
@@ -8,7 +13,7 @@ export default () => {
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div className="carousel-inner">
+      <Rounded className="carousel-inner">
         <div className="carousel-item active">
           <img className="d-block w-100" src="./products/img/carousel1.jpeg" alt="First slide" />
         </div>
@@ -18,7 +23,7 @@ export default () => {
         <div className="carousel-item">
           <img className="d-block w-100" src="./products/img/carousel3.jpeg" alt="Third slide" />
         </div>
-      </div>
+      </Rounded>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="sr-only">Previous</span>
